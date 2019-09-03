@@ -108,37 +108,7 @@
                                 <li>
                                     <i class="ion-lightbulb"></i>
                                     <span>
-                                        نحرص علي بناء علاقة وطيدة وشخصية بين فريق العمل وعملائنا
-                                    </span>
-                                </li>
-                                <li>
-                                    <i class="ion-lightbulb"></i>
-                                    <span>
-                                        تحت اشراف نخبة من اساتذة الجامعات تقدم جمييع الخدمات لكافة التخصصات الطبية بما فيها خدمة المعمل.
-                                    </span>
-                                </li>
-                                <li>
-                                    <i class="ion-lightbulb"></i>
-                                    <span>
-                                        نحرص علي بناء علاقة وطيدة وشخصية بين فريق العمل وعملائنا
-                                    </span>
-                                </li>
-                                <li>
-                                    <i class="ion-lightbulb"></i>
-                                    <span>
-                                        تحت اشراف نخبة من اساتذة الجامعات تقدم جمييع الخدمات لكافة التخصصات الطبية بما فيها خدمة المعمل.
-                                    </span>
-                                </li>
-                                <li>
-                                    <i class="ion-lightbulb"></i>
-                                    <span>
-                                        نحرص علي بناء علاقة وطيدة وشخصية بين فريق العمل وعملائنا
-                                    </span>
-                                </li>
-                                <li>
-                                    <i class="ion-lightbulb"></i>
-                                    <span>
-                                        تحت اشراف نخبة من اساتذة الجامعات تقدم جمييع الخدمات لكافة التخصصات الطبية بما فيها خدمة المعمل.
+                                        {{$about->{'about_'.currentLang()}->vision }}
                                     </span>
                                 </li>
                             </ul>
@@ -159,39 +129,10 @@
                                 <li>
                                     <i class="ion-lightbulb"></i>
                                     <span>
-                                        نحرص علي بناء علاقة وطيدة وشخصية بين فريق العمل وعملائنا
+                                        {{$about->{'about_'.currentLang()}->values }}
                                     </span>
                                 </li>
-                                <li>
-                                    <i class="ion-lightbulb"></i>
-                                    <span>
-                                        تحت اشراف نخبة من اساتذة الجامعات تقدم جمييع الخدمات لكافة التخصصات الطبية بما فيها خدمة المعمل.
-                                    </span>
-                                </li>
-                                <li>
-                                    <i class="ion-lightbulb"></i>
-                                    <span>
-                                        نحرص علي بناء علاقة وطيدة وشخصية بين فريق العمل وعملائنا
-                                    </span>
-                                </li>
-                                <li>
-                                    <i class="ion-lightbulb"></i>
-                                    <span>
-                                        تحت اشراف نخبة من اساتذة الجامعات تقدم جمييع الخدمات لكافة التخصصات الطبية بما فيها خدمة المعمل.
-                                    </span>
-                                </li>
-                                <li>
-                                    <i class="ion-lightbulb"></i>
-                                    <span>
-                                        نحرص علي بناء علاقة وطيدة وشخصية بين فريق العمل وعملائنا
-                                    </span>
-                                </li>
-                                <li>
-                                    <i class="ion-lightbulb"></i>
-                                    <span>
-                                        تحت اشراف نخبة من اساتذة الجامعات تقدم جمييع الخدمات لكافة التخصصات الطبية بما فيها خدمة المعمل.
-                                    </span>
-                                </li>
+
                             </ul>
                         </li>
                     </ul>
@@ -200,17 +141,17 @@
                         <ul>
                             <li class="vision-img active-li-img">
                                 <div class="img-div">
-                                    <img src="./images/about/vision.jpg" alt="">
+                                    <img src="{{assetPath($about->visionImage->path)}}" alt="">
                                 </div>
                             </li>
                             <li class="mission-img">
                                 <div class="img-div">
-                                    <img src="./images/about/mission.jpg" alt="">
+                                    <img src="{{assetPath($about->missionImage->path)}}" alt="">
                                 </div>
                             </li>
                             <li class="values-img">
                                 <div class="img-div">
-                                    <img src="./images/about/values.jpg" alt="">
+                                    <img src="{{assetPath($about->valuesImage->path)}}" alt="">
                                 </div>
                             </li>
                         </ul>
